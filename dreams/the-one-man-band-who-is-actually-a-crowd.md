@@ -4,6 +4,8 @@
 
 ---
 
+![Cross-section cutaway showing the exterior of a small firm's front door on the right — a warm, trustworthy craftsman in a large tweed coat shaking hands with a bearded client under a brass "I" doorplate and an iron "DO NOT ANSWER IF ALREADY ANSWERING" placard, wet Victorian street beyond. On the left, the coat opens up in cutaway to reveal a whole household jammed inside on multiple floors: the founder up top on a scaffold platform working the head-strings, an assistant at collar-level, three reviewers mid-argument in the ribcage floor (one holding a fictional floor-plan, one waving a copy proof, one holding a spec-diagram with gears), and down at the cuffs a small dark-haired figure hunched over a tiny brass keyboard, focused, typing — she never comes out. Behind the craftsman, three more clients in single file wait patiently down the interior hallway. Aesthetic: Wes Anderson dollhouse-cutaway meets Terry Gilliam absurdity, shabby-genteel Dickensian professional office palette — tweeds, brass, walnut, warm lamplight, banker's green desk lamps, leather chairs.](./images/the-one-man-band-who-is-actually-a-crowd.png)
+
 ## The dream
 
 There is a small software firm with a front door, and on the door is a single brass letter: **I.**
