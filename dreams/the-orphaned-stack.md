@@ -4,6 +4,8 @@
 
 ---
 
+![A modern corporate boardroom at dusk, city skyline through the window behind. At the head of a polished wood-veneer table sits a well-cut dark trenchcoat, back rod-straight, immaculately composed — but the collar is empty, and the sleeves rest just-too-flat on the tabletop, hollow at the cuffs. Directly on the wall behind the coat hangs a large framed portrait of a man in a fedora with matching shoulders and colouring, positioned at exactly the height where the coat's face would appear — an optical illusion that gives the impression the coat "has a head" from where the colleagues are sitting. Beside the portrait, a coat-rack with a matching fedora on it. Around the table, four real colleagues in muted corporate suits actively defer to the silent coat — one man to the left with chin on hand listening intently to nothing; a woman next to him with pen poised; a man behind them looking on quietly; on the right, an HR partner rests her cheek on her palm and gazes dreamily at the coat. In front of the coat on the table: a novelty coffee mug reading "#1 LISTENER" beside an untouched leather notepad. Brass banker's-lamp desk lights, dim overhead lighting, muted slate palette. Yorgos-Lanthimos deadpan-office aesthetic meets Wes Anderson meets the muted satire of Severance.](./images/the-orphaned-stack.png)
+
 ## The dream
 
 There is a man at the back of the third-floor meeting who has not said a word in six weeks, and everyone has decided this makes him the most impressive person in the building.
