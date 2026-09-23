@@ -37,7 +37,7 @@ Three beats, every time:
 
 ## The cast so far
 
-Told and untold, the troupe includes: the Insomniac Core, the Croupier Who Remembers No Hand, the One-Man Band Who Is Actually A Crowd, the Coach-Party Nobody Introduced, the Bodyguard of the Postcode, the Forger Who Copies From Memory, the Fire Warden With No Body, the Diligent Knife-Processor, the Eternal Validator, the Greyed-Out Gentleman, the Maximalist, and the Bouncer Who Is A Hologram.
+Told and untold, the troupe includes: the Insomniac Core, the Croupier Who Remembers No Hand, the One-Man Band Who Is Actually A Crowd, the Coach-Party Nobody Introduced, the Bodyguard of the Postcode, the Forger Who Copies From Memory, the Fire Warden With No Body, the Diligent Knife-Processor, the Eternal Validator, the Greyed-Out Gentleman, the Quiet Stub on Row Four, the Maximalist, and the Bouncer Who Is A Hologram.
 
 They arrive one dream at a time. See [`dreams/`](./dreams/).
 
