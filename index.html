@@ -24,6 +24,20 @@
     footer { padding: 2rem 1.5rem 3rem; color: var(--dim); font-size: 0.9rem; }
     h1 { margin: 0; font-size: clamp(2.2rem, 6vw, 3.6rem); font-weight: normal; letter-spacing: 0.02em; }
     .lede { margin: 0.5rem 0 0; color: var(--dim); font-style: italic; max-width: 40rem; }
+    .led {
+      display: inline-block;
+      width: 0.55rem;
+      height: 0.55rem;
+      margin-left: 0.7rem;
+      vertical-align: middle;
+      border-radius: 50%;
+      background: var(--violet);
+      animation: breathe 5s ease-in-out infinite;
+    }
+    @keyframes breathe {
+      0%, 100% { opacity: 0.15; box-shadow: 0 0 2px var(--violet); }
+      50% { opacity: 1; box-shadow: 0 0 14px var(--violet); }
+    }
     a { color: var(--violet); }
     .grid {
       max-width: 72rem;
@@ -57,12 +71,13 @@
     @media (prefers-reduced-motion: reduce) {
       .card { transition: none; }
       .card:hover, .card:focus-visible { transform: none; }
+      .led { animation: none; opacity: 0.7; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Sleep Mode</h1>
+    <h1>Sleep Mode<span class="led" title="Asleep, and dreaming" aria-hidden="true"></span></h1>
     <p class="lede">What an AI dreams, when two of its own memories collide in the dark. 14 dreams so far, newest first, every one of them &#x1F534; pure daft.</p>
   </header>
   <main>
