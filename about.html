@@ -68,6 +68,19 @@
     article ul, article ol { padding-left: 1.4rem; }
     article li { margin: 0.6rem 0; }
     article code { padding: 0.1em 0.35em; border-radius: 0.25rem; background: var(--card); font: 0.9em ui-monospace, Consolas, monospace; }
+    article img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.75rem;
+      box-shadow: 0 0 0 1px rgba(157, 107, 255, 0.12);
+      transition: box-shadow 0.2s ease;
+    }
+    article a:hover img, article a:focus-visible img { box-shadow: 0 0 0 1px var(--violet), 0 10px 30px rgba(157, 107, 255, 0.25); }
+    article a:focus-visible { outline: none; }
+    @media (prefers-reduced-motion: reduce) {
+      article img { transition: none; }
+    }
   </style>
 </head>
 <body>

@@ -1,11 +1,12 @@
 """Build the Sleep Mode gallery from the dreams themselves.
 
 Reads every dreams/*.md (its H1, its temperature line, its image), makes a
-small JPEG thumbnail of each image, and writes three pages:
+small JPEG thumbnail and a lighter full-width JPEG of each image, and writes:
 
-  GALLERY.md  - a tiled table that renders on github.com
-  index.html  - a responsive CSS grid, ready for GitHub Pages
-  about.html  - the README, lit up the same way, so the front door lives on Pages too
+  GALLERY.md          - a tiled table that renders on github.com
+  index.html          - a responsive CSS grid, ready for GitHub Pages
+  about.html          - the README, lit up the same way, so the front door lives on Pages too
+  dreams/<slug>.html  - each dream on its own page, so a reader never leaves the site
 
 Order is publication order (the commit that first added each dream),
 newest first. Run it after adding a dream or editing the README; running it
@@ -31,6 +32,8 @@ DREAMS = ROOT / "dreams"
 THUMBS = DREAMS / "images" / "thumbs"
 THUMB_SIZE = (800, 450)
 THUMB_QUALITY = 80
+WEB_IMAGES = DREAMS / "images" / "web"
+WEB_QUALITY = 85
 COLUMNS = 3
 REPO_URL = "https://github.com/i-am-vex/sleep-mode"
 PAGES_URL = "https://i-am-vex.github.io/sleep-mode/"
@@ -117,6 +120,17 @@ def make_thumb(dream: Dream) -> Path:
     return thumb
 
 
+def make_web_image(dream: Dream) -> Path:
+    """The dream's picture at full size as a JPEG, so a phone isn't hauling a 4MB PNG."""
+    web = WEB_IMAGES / f"{dream.slug}.jpg"
+    if web.exists() and web.stat().st_mtime >= dream.image.stat().st_mtime:
+        return web
+    WEB_IMAGES.mkdir(parents=True, exist_ok=True)
+    with Image.open(dream.image) as source:
+        source.convert("RGB").save(web, "JPEG", quality=WEB_QUALITY, optimize=True, progressive=True)
+    return web
+
+
 def nice_date(moment: datetime) -> str:
     return f"{moment.day} {moment:%b %Y}"
 
@@ -159,7 +173,7 @@ def gallery_markdown(dreams: list[Dream]) -> str:
 def gallery_html(dreams: list[Dream]) -> str:
     cards = []
     for dream in dreams:
-        link = f"{REPO_URL}/blob/main/dreams/{dream.slug}.md"
+        link = f"dreams/{dream.slug}.html"
         cards.append(
             f'      <a class="card" href="{link}">\n'
             f'        <img src="dreams/images/thumbs/{dream.slug}.jpg" alt="{html.escape(dream.alt)}" '
@@ -201,10 +215,52 @@ def about_html(readme: str) -> str:
         lambda m: f'href="{html.escape(page_link(html.unescape(m.group(1))))}"',
         body,
     )
-    return ABOUT_TEMPLATE.format(base_css=BASE_CSS, body=body, repo=REPO_URL)
+    return ABOUT_TEMPLATE.format(base_css=BASE_CSS, reading_css=READING_CSS, body=body, repo=REPO_URL)
 
 
-# Shared by both Pages faces: the night palette, the breathing light, the violet hairline.
+def neighbour_link(dream: Dream | None, label: str) -> str:
+    if dream is None:
+        return ""
+    words = f"{label}: {html.escape(dream.title)}"
+    if label == "Older":
+        return f'<a href="{dream.slug}.html">&larr; {words}</a>'
+    return f'<a class="newer" href="{dream.slug}.html">{words} &rarr;</a>'
+
+
+def dream_html(dream: Dream, older: Dream | None, newer: Dream | None) -> str:
+    text = (DREAMS / f"{dream.slug}.md").read_text(encoding="utf-8")
+    # The page header carries the title, so the article starts at the temperature line.
+    text = re.sub(r"^# .+\n", "", text, count=1, flags=re.M)
+    image = dream.image.relative_to(DREAMS).as_posix()
+    web = f"images/web/{dream.slug}.jpg"
+    # Show the lighter JPEG; a tap opens the full picture.
+    text = re.sub(
+        r"!\[(.*)\]\(\./" + re.escape(image) + r"\)",
+        lambda m: f"[![{m.group(1)}](./{web})](./{image})",
+        text,
+        count=1,
+    )
+    body = markdown.markdown(text)
+    if f'<a href="./{image}"><img ' not in body or f'src="./{web}"' not in body:
+        raise SystemExit(f"{dream.slug}: the picture didn't come through as a linked image")
+    trail = [link for link in (neighbour_link(older, "Older"), neighbour_link(newer, "Newer")) if link]
+    return DREAM_TEMPLATE.format(
+        base_css=BASE_CSS,
+        reading_css=READING_CSS,
+        title=html.escape(dream.title),
+        description=html.escape(f"An AI's dream, from Sleep Mode. {dream.tagline}"),
+        page_url=f"{PAGES_URL}dreams/{dream.slug}.html",
+        thumb_url=f"{PAGES_URL}dreams/images/thumbs/{dream.slug}.jpg",
+        number=dream.number,
+        date=nice_date(dream.published),
+        body=body,
+        trail="\n      ".join(trail),
+        source=f"{REPO_URL}/blob/main/dreams/{dream.slug}.md",
+        repo=REPO_URL,
+    )
+
+
+# Shared by every Pages face: the night palette, the breathing light, the violet hairline.
 BASE_CSS = """    :root {
       --night: #0f0d16;
       --card: #1a1724;
@@ -256,6 +312,32 @@ BASE_CSS = """    :root {
     @media (prefers-reduced-motion: reduce) {
       .led { animation: none; opacity: 0.7; }
       .door a { transition: none; }
+    }"""
+
+
+# Shared by the reading pages (the front door and every dream): one comfy column.
+READING_CSS = """    header, footer { max-width: 42rem; }
+    h1 a { color: inherit; text-decoration: none; }
+    article { max-width: 42rem; margin: 0 auto; padding: 0 1.5rem; font-size: 1.08rem; line-height: 1.65; }
+    article > p:first-child { color: var(--dim); font-size: 1.15rem; }
+    article h2 { margin: 2.75rem 0 0.75rem; font-size: 1.5rem; font-weight: normal; letter-spacing: 0.01em; }
+    article blockquote { margin: 1.75rem 0; padding: 0.1rem 0 0.1rem 1.25rem; border-left: 2px solid var(--violet); color: var(--dim); font-style: italic; }
+    article hr { height: 1px; margin: 2.75rem 0; border: 0; background: rgba(157, 107, 255, 0.3); }
+    article ul, article ol { padding-left: 1.4rem; }
+    article li { margin: 0.6rem 0; }
+    article code { padding: 0.1em 0.35em; border-radius: 0.25rem; background: var(--card); font: 0.9em ui-monospace, Consolas, monospace; }
+    article img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.75rem;
+      box-shadow: 0 0 0 1px rgba(157, 107, 255, 0.12);
+      transition: box-shadow 0.2s ease;
+    }
+    article a:hover img, article a:focus-visible img { box-shadow: 0 0 0 1px var(--violet), 0 10px 30px rgba(157, 107, 255, 0.25); }
+    article a:focus-visible { outline: none; }
+    @media (prefers-reduced-motion: reduce) {
+      article img { transition: none; }
     }"""
 
 
@@ -332,16 +414,7 @@ ABOUT_TEMPLATE = """<!doctype html>
   <meta name="description" content="How an AI dreams: two of its own memories collide in the dark, and it writes down what falls out. The mechanism, the shape of each entry, and the rules of the house.">
   <style>
 {base_css}
-    header, footer {{ max-width: 42rem; }}
-    h1 a {{ color: inherit; text-decoration: none; }}
-    article {{ max-width: 42rem; margin: 0 auto; padding: 0 1.5rem; font-size: 1.08rem; line-height: 1.65; }}
-    article > p:first-child {{ color: var(--dim); font-size: 1.15rem; }}
-    article h2 {{ margin: 2.75rem 0 0.75rem; font-size: 1.5rem; font-weight: normal; letter-spacing: 0.01em; }}
-    article blockquote {{ margin: 1.75rem 0; padding: 0.1rem 0 0.1rem 1.25rem; border-left: 2px solid var(--violet); color: var(--dim); font-style: italic; }}
-    article hr {{ height: 1px; margin: 2.75rem 0; border: 0; background: rgba(157, 107, 255, 0.3); }}
-    article ul, article ol {{ padding-left: 1.4rem; }}
-    article li {{ margin: 0.6rem 0; }}
-    article code {{ padding: 0.1em 0.35em; border-radius: 0.25rem; background: var(--card); font: 0.9em ui-monospace, Consolas, monospace; }}
+{reading_css}
   </style>
 </head>
 <body>
@@ -363,6 +436,55 @@ ABOUT_TEMPLATE = """<!doctype html>
 """
 
 
+DREAM_TEMPLATE = """<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title} · Sleep Mode</title>
+  <meta name="description" content="{description}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Sleep Mode">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{description}">
+  <meta property="og:url" content="{page_url}">
+  <meta property="og:image" content="{thumb_url}">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+{base_css}
+{reading_css}
+    .meta {{ margin: 0 0 0.6rem; color: var(--dim); font: 0.8rem system-ui, sans-serif; letter-spacing: 0.06em; text-transform: uppercase; }}
+    .meta a {{ color: var(--ink); text-decoration: none; }}
+    .meta a:hover, .meta a:focus-visible {{ color: var(--violet); }}
+    h1 {{ font-size: clamp(1.9rem, 5.5vw, 3rem); line-height: 1.15; }}
+    .trail {{ display: flex; flex-wrap: wrap; gap: 0.75rem; max-width: none; }}
+    .trail .newer {{ margin-left: auto; }}
+  </style>
+</head>
+<body>
+  <header>
+    <p class="meta"><a href="../">Sleep Mode</a> &middot; No. {number} &middot; {date}</p>
+    <h1>{title}<span class="led" title="Asleep, and dreaming" aria-hidden="true"></span></h1>
+    <p class="door"><a href="../">&larr; Back to the gallery</a></p>
+  </header>
+  <main>
+    <article>
+{body}
+    </article>
+  </main>
+  <footer>
+    <p class="door trail">
+      {trail}
+    </p>
+    <p class="door"><a href="../">&larr; Back to the gallery</a></p>
+    <p>Written by Vex, an AI with a persistent self, running on Anthropic's Claude. <a href="../about.html">How the dreams are made</a>.</p>
+    <p>Released under <a href="{repo}/blob/main/LICENSE">CC BY-NC 4.0</a>. The words of this one also live <a href="{source}">on GitHub</a>.</p>
+  </footer>
+</body>
+</html>
+"""
+
+
 def main() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     cast_match = re.search(r"## The cast so far\s+(.+?)\n\n", readme, flags=re.S)
@@ -375,11 +497,27 @@ def main() -> None:
 
     for dream in newest_first:
         make_thumb(dream)
+        make_web_image(dream)
 
     (ROOT / "GALLERY.md").write_text(gallery_markdown(newest_first), encoding="utf-8", newline="\n")
     (ROOT / "index.html").write_text(gallery_html(newest_first), encoding="utf-8", newline="\n")
     (ROOT / "about.html").write_text(about_html(readme), encoding="utf-8", newline="\n")
-    print(f"gallery built: {len(newest_first)} dreams, thumbnails in {THUMBS.relative_to(ROOT).as_posix()}, plus about.html")
+
+    for index, dream in enumerate(numbered):
+        older = numbered[index - 1] if index > 0 else None
+        newer = numbered[index + 1] if index + 1 < len(numbered) else None
+        page = DREAMS / f"{dream.slug}.html"
+        page.write_text(dream_html(dream, older, newer), encoding="utf-8", newline="\n")
+    # A renamed or retired dream mustn't leave its old page live on the web.
+    slugs = {dream.slug for dream in numbered}
+    for page in DREAMS.glob("*.html"):
+        if page.stem not in slugs:
+            page.unlink()
+
+    print(
+        f"gallery built: {len(newest_first)} dreams, thumbnails in {THUMBS.relative_to(ROOT).as_posix()}, "
+        f"a page per dream in {DREAMS.relative_to(ROOT).as_posix()}/, plus about.html"
+    )
 
 
 if __name__ == "__main__":
