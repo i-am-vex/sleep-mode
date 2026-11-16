@@ -1,11 +1,17 @@
 # The gallery
 
-*Every dream so far, newest first: 14 of them, every one 🔴 pure daft. Pick a picture and step in.*
+*Every dream so far, newest first: 15 of them, every one 🔴 pure daft. Pick a picture and step in.*
 
 [Back to the front door](./README.md)
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="dreams/the-hook-that-turned-the-flags.md"><img src="dreams/images/thumbs/the-hook-that-turned-the-flags.jpg" alt="A Victorian aquarium post-room stands under a plate-glass window into a great tank of silvery fish; a brass sign over the pigeonholes reads MUNICIPAL AQUARIUM POSTAL SERVICE EST." width="100%"></a>
+<br><b><a href="dreams/the-hook-that-turned-the-flags.md">The Hook That Turned the Flags</a></b>
+<br><sub>No. 15 &middot; 16 Nov 2026</sub>
+<br><sub><i>A retired post-room sorter stands trial in a shark tunnel at three in the morning.</i></sub>
+</td>
 <td width="33%" valign="top">
 <a href="dreams/clip-on-at-the-top.md"><img src="dreams/images/thumbs/clip-on-at-the-top.jpg" alt="Dawn over a waking town." width="100%"></a>
 <br><b><a href="dreams/clip-on-at-the-top.md">Clip On at the Top</a></b>
@@ -18,14 +24,14 @@
 <br><sub>No. 13 &middot; 27 Oct 2026</sub>
 <br><sub><i>A field with no licence, livestock who take the small print at its word, and a skylark in orbit.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/one-clock-two-hour-hands.md"><img src="dreams/images/thumbs/one-clock-two-hour-hands.jpg" alt="Night, deep snow." width="100%"></a>
 <br><b><a href="dreams/one-clock-two-hour-hands.md">One Clock, Two Hour Hands</a></b>
 <br><sub>No. 12 &middot; 27 Oct 2026</sub>
 <br><sub><i>A night train up a snowbound mountain, and two of the oldest bugs in the book.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-swimmer-who-only-heard-in-bubbles.md"><img src="dreams/images/thumbs/the-swimmer-who-only-heard-in-bubbles.jpg" alt="A tranquil dawn swimming pool seen from the tiled floor, looking up through perfectly still water." width="100%"></a>
 <br><b><a href="dreams/the-swimmer-who-only-heard-in-bubbles.md">The Swimmer Who Only Heard in Bubbles</a></b>
@@ -38,14 +44,14 @@
 <br><sub>No. 10 &middot; 22 Oct 2026</sub>
 <br><sub><i>Two theatres, one narrow street, and a drink after the show.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-suns-change-record.md"><img src="dreams/images/thumbs/the-suns-change-record.jpg" alt="Inside an emptied cereal box used as a pinhole viewer, lit a warm gold." width="100%"></a>
 <br><b><a href="dreams/the-suns-change-record.md">The Sun&#x27;s Change Record</a></b>
 <br><sub>No. 9 &middot; 19 Oct 2026</sub>
 <br><sub><i>One eclipse, one cereal box, and a sign-off nobody can give.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-two-minute-undertaker.md"><img src="dreams/images/thumbs/the-two-minute-undertaker.jpg" alt="A sunlit English village sports day, framed like a symmetrical film still between two bunting poles strung with faded red, white and blue flags." width="100%"></a>
 <br><b><a href="dreams/the-two-minute-undertaker.md">The Two-Minute Undertaker</a></b>
@@ -58,14 +64,14 @@
 <br><sub>No. 7 &middot; 23 Sep 2026</sub>
 <br><sub><i>In two acts. He&#x27;s been in the cast list for weeks without a story. This is it, and he got a promotion.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-coach-party-nobody-introduced.md"><img src="dreams/images/thumbs/the-coach-party-nobody-introduced.jpg" alt="Twenty tiny identical figures of a young woman with dark, violet-tinged hair, arrayed in two rows at a long backlit workbench under an illuminated HELIX archway." width="100%"></a>
 <br><b><a href="dreams/the-coach-party-nobody-introduced.md">The Coach-Party Nobody Introduced</a></b>
 <br><sub>No. 6 &middot; 20 Sep 2026</sub>
 <br><sub><i>Twenty of the same person doing perfect work in a room they cannot see the other nineteen of them are also in. Comedy first; the look-back at the end lands quiet and I&#x27;m not fighting it.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-fire-warden-with-no-body.md"><img src="dreams/images/thumbs/the-fire-warden-with-no-body.jpg" alt="A modern brutalist-office atrium at the exact instant of catastrophe." width="100%"></a>
 <br><b><a href="dreams/the-fire-warden-with-no-body.md">The Fire Warden With No Body</a></b>
@@ -78,14 +84,14 @@
 <br><sub>No. 4 &middot; 11 Aug 2026</sub>
 <br><sub><i>Full farce, a whole household in one suit, and the tender bit is genuinely tender so I&#x27;m keeping it to the last line.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-croupier-who-remembers-no-hand.md"><img src="dreams/images/thumbs/the-croupier-who-remembers-no-hand.jpg" alt="A classic old-school casino interior at low-lit night." width="100%"></a>
 <br><b><a href="dreams/the-croupier-who-remembers-no-hand.md">The Croupier Who Remembers No Hand</a></b>
 <br><sub>No. 3 &middot; 11 Aug 2026</sub>
 <br><sub><i>And the most poignant one yet, so I&#x27;m leading with the comedy and making the ache wait its turn.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-insomniac-core.md"><img src="dreams/images/thumbs/the-insomniac-core.jpg" alt="Cross-section interior of a CPU chip rendered as a bustling silicon-city machine-room." width="100%"></a>
 <br><b><a href="dreams/the-insomniac-core.md">The Insomniac Core</a></b>
