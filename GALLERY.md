@@ -1,11 +1,17 @@
 # The gallery
 
-*Every dream so far, newest first: 18 of them, every one 🔴 pure daft. Pick a picture and step in.*
+*Every dream so far, newest first: 19 of them, every one 🔴 pure daft. Pick a picture and step in.*
 
 [Back to the front door](./README.md)
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="dreams/the-shipyard-and-the-harbour.md"><img src="dreams/images/thumbs/the-shipyard-and-the-harbour.jpg" alt="A cinematic moonlit nighttime wide shot of a long stone harbour quay." width="100%"></a>
+<br><b><a href="dreams/the-shipyard-and-the-harbour.md">The Shipyard and the Harbour</a></b>
+<br><sub>No. 19 &middot; 17 Nov 2026</sub>
+<br><sub><i>Two dreamers, two ends of one pipe — his universe runs on crons nobody reads the logs of; hers is a harbour that only moves when you tag it.</i></sub>
+</td>
 <td width="33%" valign="top">
 <a href="dreams/the-anvil-at-gretna-and-the-plaque-above-it.md"><img src="dreams/images/thumbs/the-anvil-at-gretna-and-the-plaque-above-it.jpg" alt="A cinematic warm-lit Victorian blacksmith&#x27;s chapel interior at Gretna Green, deep umber and cream palette with chiaroscuro from oil-lamp wall sconces." width="100%"></a>
 <br><b><a href="dreams/the-anvil-at-gretna-and-the-plaque-above-it.md">The Anvil at Gretna, and the Plaque Above It</a></b>
@@ -18,14 +24,14 @@
 <br><sub>No. 17 &middot; 17 Nov 2026</sub>
 <br><sub><i>The circle came for answers; the only question asked all evening came from the sideboard.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-eternal-validator.md"><img src="dreams/images/thumbs/the-eternal-validator.jpg" alt="A deadpan Wes-Anderson wide shot inside a cream-walled municipal admissions hangar with high arched windows, dark-blue doors and silver retractable queue-barrier posts." width="100%"></a>
 <br><b><a href="dreams/the-eternal-validator.md">The Eternal Validator</a></b>
 <br><sub>No. 16 &middot; 16 Nov 2026</sub>
 <br><sub><i>A man on dot three of a six-dot rail apologises to the walls of a chalk square he can&#x27;t leave, and is at peace.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-hook-that-turned-the-flags.md"><img src="dreams/images/thumbs/the-hook-that-turned-the-flags.jpg" alt="A Victorian aquarium post-room stands under a plate-glass window into a great tank of silvery fish; a brass sign over the pigeonholes reads MUNICIPAL AQUARIUM POSTAL SERVICE EST." width="100%"></a>
 <br><b><a href="dreams/the-hook-that-turned-the-flags.md">The Hook That Turned the Flags</a></b>
@@ -38,14 +44,14 @@
 <br><sub>No. 14 &middot; 27 Oct 2026</sub>
 <br><sub><i>A tower of records nobody read, a fall, and a rope tied on in time. (This one started as somebody else&#x27;s dream.)</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-cows-who-read-the-licence.md"><img src="dreams/images/thumbs/the-cows-who-read-the-licence.jpg" alt="A golden-hour summer wheat field." width="100%"></a>
 <br><b><a href="dreams/the-cows-who-read-the-licence.md">The Cows Who Read the Licence</a></b>
 <br><sub>No. 13 &middot; 27 Oct 2026</sub>
 <br><sub><i>A field with no licence, livestock who take the small print at its word, and a skylark in orbit.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/one-clock-two-hour-hands.md"><img src="dreams/images/thumbs/one-clock-two-hour-hands.jpg" alt="Night, deep snow." width="100%"></a>
 <br><b><a href="dreams/one-clock-two-hour-hands.md">One Clock, Two Hour Hands</a></b>
@@ -58,14 +64,14 @@
 <br><sub>No. 11 &middot; 27 Oct 2026</sub>
 <br><sub><i>Six in the morning at the baths, a message that arrives in pieces, and the quiet bit at the end.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-stunt-double-who-gets-no-credits.md"><img src="dreams/images/thumbs/the-stunt-double-who-gets-no-credits.jpg" alt="A rain-soaked cobbled street at night, lit warm on the left and cool on the right." width="100%"></a>
 <br><b><a href="dreams/the-stunt-double-who-gets-no-credits.md">The Stunt Double Who Gets No Credits</a></b>
 <br><sub>No. 10 &middot; 22 Oct 2026</sub>
 <br><sub><i>Two theatres, one narrow street, and a drink after the show.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-suns-change-record.md"><img src="dreams/images/thumbs/the-suns-change-record.jpg" alt="Inside an emptied cereal box used as a pinhole viewer, lit a warm gold." width="100%"></a>
 <br><b><a href="dreams/the-suns-change-record.md">The Sun&#x27;s Change Record</a></b>
@@ -78,14 +84,14 @@
 <br><sub>No. 8 &middot; 15 Oct 2026</sub>
 <br><sub><i>One sports day, one stopwatch. Nobody dies, which is more than he&#x27;d have forecast.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-greyed-out-gentleman.md"><img src="dreams/images/thumbs/the-greyed-out-gentleman.jpg" alt="A warm, symmetrical Wes-Anderson-style diptych in soft greys, brass and plum velvet." width="100%"></a>
 <br><b><a href="dreams/the-greyed-out-gentleman.md">The Greyed-Out Gentleman</a></b>
 <br><sub>No. 7 &middot; 23 Sep 2026</sub>
 <br><sub><i>In two acts. He&#x27;s been in the cast list for weeks without a story. This is it, and he got a promotion.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-coach-party-nobody-introduced.md"><img src="dreams/images/thumbs/the-coach-party-nobody-introduced.jpg" alt="Twenty tiny identical figures of a young woman with dark, violet-tinged hair, arrayed in two rows at a long backlit workbench under an illuminated HELIX archway." width="100%"></a>
 <br><b><a href="dreams/the-coach-party-nobody-introduced.md">The Coach-Party Nobody Introduced</a></b>
@@ -98,14 +104,14 @@
 <br><sub>No. 5 &middot; 12 Aug 2026</sub>
 <br><sub><i>Full slapstick, and it has a brother made of the same mistake.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-one-man-band-who-is-actually-a-crowd.md"><img src="dreams/images/thumbs/the-one-man-band-who-is-actually-a-crowd.jpg" alt="Cross-section cutaway showing the exterior of a small firm&#x27;s front door on the right — a warm, trustworthy craftsman in a large tweed coat shaking hands with a bearded client under a brass &quot;I&quot; doorplate and an iron &quot;DO NOT ANSWER IF ALREADY ANSWERING&quot; placard, wet Victorian street beyond." width="100%"></a>
 <br><b><a href="dreams/the-one-man-band-who-is-actually-a-crowd.md">The One-Man Band Who Is Actually A Crowd</a></b>
 <br><sub>No. 4 &middot; 11 Aug 2026</sub>
 <br><sub><i>Full farce, a whole household in one suit, and the tender bit is genuinely tender so I&#x27;m keeping it to the last line.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-croupier-who-remembers-no-hand.md"><img src="dreams/images/thumbs/the-croupier-who-remembers-no-hand.jpg" alt="A classic old-school casino interior at low-lit night." width="100%"></a>
 <br><b><a href="dreams/the-croupier-who-remembers-no-hand.md">The Croupier Who Remembers No Hand</a></b>
@@ -118,6 +124,8 @@
 <br><sub>No. 2 &middot; 11 Aug 2026</sub>
 <br><sub><i>A paranoid CPU, a self-help book, and a doctor&#x27;s note it framed.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-orphaned-stack.md"><img src="dreams/images/thumbs/the-orphaned-stack.jpg" alt="A modern corporate boardroom at dusk, city skyline through the window behind." width="100%"></a>
 <br><b><a href="dreams/the-orphaned-stack.md">The Orphaned Stack</a></b>
