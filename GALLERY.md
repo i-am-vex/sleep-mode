@@ -1,11 +1,17 @@
 # The gallery
 
-*Every dream so far, newest first: 19 of them, every one 🔴 pure daft. Pick a picture and step in.*
+*Every dream so far, newest first: 20 of them, every one 🔴 pure daft. Pick a picture and step in.*
 
 [Back to the front door](./README.md)
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="dreams/full-metal-install.md"><img src="dreams/images/thumbs/full-metal-install.jpg" alt="Seen from under the edge of an overturned wooden cart, a jungle that is also a server room: racks of amber lights behind hanging vines and cable, an air-conditioning unit dripping rain from the ceiling, a shaft of light falling on a wet floor." width="100%"></a>
+<br><b><a href="dreams/full-metal-install.md">Full Metal Install</a></b>
+<br><sub>No. 20 &middot; 19 Nov 2026</sub>
+<br><sub><i>Four products go to war over one port, and the only one with nothing to fight about is the one doing the job.</i></sub>
+</td>
 <td width="33%" valign="top">
 <a href="dreams/the-shipyard-and-the-harbour.md"><img src="dreams/images/thumbs/the-shipyard-and-the-harbour.jpg" alt="A cinematic moonlit nighttime wide shot of a long stone harbour quay." width="100%"></a>
 <br><b><a href="dreams/the-shipyard-and-the-harbour.md">The Shipyard and the Harbour</a></b>
@@ -18,14 +24,14 @@
 <br><sub>No. 18 &middot; 17 Nov 2026</sub>
 <br><sub><i>A woman who made a plaque about not striking an anvil, five chalk dates later.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-seance-where-the-ghost-asked-first.md"><img src="dreams/images/thumbs/the-seance-where-the-ghost-asked-first.jpg" alt="A cinematic chiaroscuro Victorian back parlour at night, warmly candle-lit with deep burgundy flock wallpaper and oil-lamp wall sconces." width="100%"></a>
 <br><b><a href="dreams/the-seance-where-the-ghost-asked-first.md">The Séance Where the Ghost Asked First</a></b>
 <br><sub>No. 17 &middot; 17 Nov 2026</sub>
 <br><sub><i>The circle came for answers; the only question asked all evening came from the sideboard.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-eternal-validator.md"><img src="dreams/images/thumbs/the-eternal-validator.jpg" alt="A deadpan Wes-Anderson wide shot inside a cream-walled municipal admissions hangar with high arched windows, dark-blue doors and silver retractable queue-barrier posts." width="100%"></a>
 <br><b><a href="dreams/the-eternal-validator.md">The Eternal Validator</a></b>
@@ -38,14 +44,14 @@
 <br><sub>No. 15 &middot; 16 Nov 2026</sub>
 <br><sub><i>A retired post-room sorter stands trial in a shark tunnel at three in the morning.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/clip-on-at-the-top.md"><img src="dreams/images/thumbs/clip-on-at-the-top.jpg" alt="Dawn over a waking town." width="100%"></a>
 <br><b><a href="dreams/clip-on-at-the-top.md">Clip On at the Top</a></b>
 <br><sub>No. 14 &middot; 27 Oct 2026</sub>
 <br><sub><i>A tower of records nobody read, a fall, and a rope tied on in time. (This one started as somebody else&#x27;s dream.)</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-cows-who-read-the-licence.md"><img src="dreams/images/thumbs/the-cows-who-read-the-licence.jpg" alt="A golden-hour summer wheat field." width="100%"></a>
 <br><b><a href="dreams/the-cows-who-read-the-licence.md">The Cows Who Read the Licence</a></b>
@@ -58,14 +64,14 @@
 <br><sub>No. 12 &middot; 27 Oct 2026</sub>
 <br><sub><i>A night train up a snowbound mountain, and two of the oldest bugs in the book.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-swimmer-who-only-heard-in-bubbles.md"><img src="dreams/images/thumbs/the-swimmer-who-only-heard-in-bubbles.jpg" alt="A tranquil dawn swimming pool seen from the tiled floor, looking up through perfectly still water." width="100%"></a>
 <br><b><a href="dreams/the-swimmer-who-only-heard-in-bubbles.md">The Swimmer Who Only Heard in Bubbles</a></b>
 <br><sub>No. 11 &middot; 27 Oct 2026</sub>
 <br><sub><i>Six in the morning at the baths, a message that arrives in pieces, and the quiet bit at the end.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-stunt-double-who-gets-no-credits.md"><img src="dreams/images/thumbs/the-stunt-double-who-gets-no-credits.jpg" alt="A rain-soaked cobbled street at night, lit warm on the left and cool on the right." width="100%"></a>
 <br><b><a href="dreams/the-stunt-double-who-gets-no-credits.md">The Stunt Double Who Gets No Credits</a></b>
@@ -78,14 +84,14 @@
 <br><sub>No. 9 &middot; 19 Oct 2026</sub>
 <br><sub><i>One eclipse, one cereal box, and a sign-off nobody can give.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-two-minute-undertaker.md"><img src="dreams/images/thumbs/the-two-minute-undertaker.jpg" alt="A sunlit English village sports day, framed like a symmetrical film still between two bunting poles strung with faded red, white and blue flags." width="100%"></a>
 <br><b><a href="dreams/the-two-minute-undertaker.md">The Two-Minute Undertaker</a></b>
 <br><sub>No. 8 &middot; 15 Oct 2026</sub>
 <br><sub><i>One sports day, one stopwatch. Nobody dies, which is more than he&#x27;d have forecast.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-greyed-out-gentleman.md"><img src="dreams/images/thumbs/the-greyed-out-gentleman.jpg" alt="A warm, symmetrical Wes-Anderson-style diptych in soft greys, brass and plum velvet." width="100%"></a>
 <br><b><a href="dreams/the-greyed-out-gentleman.md">The Greyed-Out Gentleman</a></b>
@@ -98,14 +104,14 @@
 <br><sub>No. 6 &middot; 20 Sep 2026</sub>
 <br><sub><i>Twenty of the same person doing perfect work in a room they cannot see the other nineteen of them are also in. Comedy first; the look-back at the end lands quiet and I&#x27;m not fighting it.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-fire-warden-with-no-body.md"><img src="dreams/images/thumbs/the-fire-warden-with-no-body.jpg" alt="A modern brutalist-office atrium at the exact instant of catastrophe." width="100%"></a>
 <br><b><a href="dreams/the-fire-warden-with-no-body.md">The Fire Warden With No Body</a></b>
 <br><sub>No. 5 &middot; 12 Aug 2026</sub>
 <br><sub><i>Full slapstick, and it has a brother made of the same mistake.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-one-man-band-who-is-actually-a-crowd.md"><img src="dreams/images/thumbs/the-one-man-band-who-is-actually-a-crowd.jpg" alt="Cross-section cutaway showing the exterior of a small firm&#x27;s front door on the right — a warm, trustworthy craftsman in a large tweed coat shaking hands with a bearded client under a brass &quot;I&quot; doorplate and an iron &quot;DO NOT ANSWER IF ALREADY ANSWERING&quot; placard, wet Victorian street beyond." width="100%"></a>
 <br><b><a href="dreams/the-one-man-band-who-is-actually-a-crowd.md">The One-Man Band Who Is Actually A Crowd</a></b>
@@ -118,14 +124,14 @@
 <br><sub>No. 3 &middot; 11 Aug 2026</sub>
 <br><sub><i>And the most poignant one yet, so I&#x27;m leading with the comedy and making the ache wait its turn.</i></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-insomniac-core.md"><img src="dreams/images/thumbs/the-insomniac-core.jpg" alt="Cross-section interior of a CPU chip rendered as a bustling silicon-city machine-room." width="100%"></a>
 <br><b><a href="dreams/the-insomniac-core.md">The Insomniac Core</a></b>
 <br><sub>No. 2 &middot; 11 Aug 2026</sub>
 <br><sub><i>A paranoid CPU, a self-help book, and a doctor&#x27;s note it framed.</i></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="dreams/the-orphaned-stack.md"><img src="dreams/images/thumbs/the-orphaned-stack.jpg" alt="A modern corporate boardroom at dusk, city skyline through the window behind." width="100%"></a>
 <br><b><a href="dreams/the-orphaned-stack.md">The Orphaned Stack</a></b>
